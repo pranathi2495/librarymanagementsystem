@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.tyss.lms.db.User"/>
+<fullyQualifiedTypeName name="com.tyss.lms.db.Book"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.beans.Beans"/>
+<fullyQualifiedTypeName name="com.tyss.lms.exception.StudentException"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dao.StudentImpl"/>
+<fullyQualifiedTypeName name="com.tyss.lms.service.StudentServiceImpl"/>
+<fullyQualifiedTypeName name="com.tyss.lms.service.StudentService"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.tyss.lms.factory.StudentFactory"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dao.StudentDAO"/>
+<fullyQualifiedTypeName name="com.tyss.lms.exception.BookException"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.tyss.lms.exception.AdminException"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dao.AdminDAOimpl"/>
+<fullyQualifiedTypeName name="com.tyss.lms.service.AdminServiceImpl"/>
+<fullyQualifiedTypeName name="com.tyss.lms.service.AdminService"/>
+<fullyQualifiedTypeName name="com.tyss.lms.factory.AdminFactory"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dto.AdminBean"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dto.Book"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dao.AdminDAO"/>
+<fullyQualifiedTypeName name="com.tyss.lms.db.DataBase"/>
+<fullyQualifiedTypeName name="com.tyss.lms.dto.StudentInformation"/>
+</qualifiedTypeNameHistroy>

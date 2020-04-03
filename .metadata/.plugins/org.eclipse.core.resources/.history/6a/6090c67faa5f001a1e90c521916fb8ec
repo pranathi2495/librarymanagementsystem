@@ -1,0 +1,50 @@
+package com.tyss.lms.dao;
+
+import java.util.Scanner;
+
+import com.tyss.lms.db.DataBase;
+import com.tyss.lms.dto.AdminBean;
+import com.tyss.lms.dto.Book;
+import com.tyss.lms.dto.StudentInformation;
+import com.tyss.lms.exception.AdminException;
+
+public class AdminDAOimpl implements AdminDAO{
+
+	public boolean register(AdminBean admn) {
+		for(AdminBean adminbean:DataBase.ADMIN) {
+			if(adminbean.getEmail().equals(admn)) {
+				return false;
+			}
+		}
+		DataBase.ADMIN.add(admn);
+		return true;
+	}
+
+
+	public AdminBean auth(String email, String password) {
+		for(AdminBean adminbean:DataBase.ADMIN) {
+			if(adminbean.getEmail().equals(email) && adminbean.getPassword().equals(password)) {
+				return adminbean;
+			}
+		}
+		throw new AdminException("Invalid Credentials");
+	}
+
+	public boolean addBook(Book book) {
+		DataBase.BOOKS.add(book);
+		return false;
+
+	}
+
+	public boolean delete(Book book) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Book serach(int book) {
+		return null;
+ 			
+	}
+
+
+}

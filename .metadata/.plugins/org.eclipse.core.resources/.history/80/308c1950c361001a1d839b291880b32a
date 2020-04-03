@@ -1,0 +1,67 @@
+package com.tyss.lms.dao;
+
+import java.util.List;
+
+import com.tyss.lms.db.DataBase;
+import com.tyss.lms.dto.Book;
+import com.tyss.lms.dto.StudentInformation;
+import com.tyss.lms.exception.BookException;
+import com.tyss.lms.exception.StudentException;
+
+public class StudentDAOImpl implements StudentDAO{
+
+	public StudentInformation auth(String username, String password) {
+		for(StudentInformation studentinfo:DataBase.USERS) {
+			if(studentinfo.getUsername().equals(username) && studentinfo.getPassword().equals(password)) {
+				return studentinfo;
+			}
+		}
+		throw new StudentException("Invalid Credentials");
+
+	}
+
+	public boolean register(StudentInformation studentinfo) {
+		for(StudentInformation studentinformation: DataBase.USERS) {
+			if(studentinformation.getUsername().equals(studentinformation.getUsername())) {
+				return false;
+			}
+		}
+		DataBase.USERS.add(studentinfo);
+		return true;
+	}
+
+	public Book searchbyBookName(Book bookName) {
+		for(Book book: DataBase.BOOKS) {
+			if(book.getBookTitle().equals(book.getBookTitle())) {
+				return book;
+			}
+				
+		}
+		throw new BookException("Book is not available");
+		
+	}
+
+	public boolean bookBorrow(int matricno) {
+		for(Book book: DataBase.BOOKS) {
+			if(book.getBookTitle().equals(bookTitle) && book.getCopies() !=0} {
+				return book;	
+	}
+
+	public boolean bookReturn(int matricno) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean accountCreation(int matricno) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public Book searchbyBookName(String bookName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}

@@ -1,0 +1,34 @@
+package com.tyss.lms.service;
+
+import com.tyss.lms.dao.AdminDAO;
+import com.tyss.lms.dto.AdminBean;
+import com.tyss.lms.dto.Book;
+import com.tyss.lms.factory.AdminFactory;
+
+public class AdminServiceImpl implements AdminService {
+
+	private AdminDAO dao=AdminFactory.getAdminDAO();
+
+	public boolean register(AdminBean admn) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public AdminBean auth(String email, String password) {
+		return dao.auth(email, password);
+	}
+
+	public boolean addBook(Book book) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean delete(Book book) {
+		return dao.delete(book);
+	}
+
+	public Book search(String bookName) {
+		return dao.search(bookName);
+	}
+
+}
